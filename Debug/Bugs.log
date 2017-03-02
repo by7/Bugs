@@ -1,0 +1,14 @@
+﻿  Actor.cpp
+c:\cs32\bugs\bugs\actor.cpp(242): warning C4800: 'Actor *': forcing value to bool 'true' or 'false' (performance warning)
+c:\cs32\bugs\bugs\actor.cpp(260): warning C4800: 'Actor *': forcing value to bool 'true' or 'false' (performance warning)
+  Generating Code...
+c:\cs32\bugs\bugs\actor.cpp(179): warning C4715: 'Ant::runCommand': not all control paths return a value
+  Compiling...
+  StudentWorld.cpp
+c:\cs32\bugs\bugs\studentworld.cpp(19): warning C4018: '<': signed/unsigned mismatch
+c:\cs32\bugs\bugs\studentworld.cpp(58): warning C4018: '>': signed/unsigned mismatch
+c:\cs32\bugs\bugs\studentworld.cpp(84): warning C4018: '<': signed/unsigned mismatch
+c:\cs32\bugs\bugs\studentworld.cpp(153): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Bugs.vcxproj -> C:\CS32\Bugs\Debug\Bugs.exe
+  Bugs.vcxproj -> C:\CS32\Bugs\Debug\Bugs.pdb (Full PDB)
