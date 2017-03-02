@@ -2,6 +2,7 @@
 #include "StudentWorld.h"
 #include "Compiler.h"
 #include <string>
+#include <cmath>
 using namespace std;
 
 // Students:  Add code to this file (if you wish), Actor.h, StudentWorld.h, and StudentWorld.cpp
@@ -15,7 +16,6 @@ void EnergyHolder::addFood(int amt) {
 		f = new Food(getWorld(), getX(), getY(), amt);
 		getWorld()->addActor(f);
 	}
-	
 }
 
 int EnergyHolder::pickupFood(int amt) {
@@ -317,8 +317,15 @@ void AdultGrasshopper::doSomething() {
 	if (getWorld()->isEnemyAt(getX(), getY(), -1) && randInt(1, 3) == 1) {
 		getWorld()->biteEnemyAt(this, -1, 50);
 	}
-	else if (randInt(1, 10) == 1 /*&& space available*/) {
-
+	else if (randInt(1, 10) == 1) {
+		int r, ang, x = 0, y = 0;
+		do {
+			r = randInt(1, 10);
+			ang = randInt(1, 360);
+			x = getX() + r*sin(ang*3.1415 / 180);
+			y = getY() + r*sin(ang*3.1415 / 180);
+		} while (!getWorld()->canMoveTo(x, y));
+		moveTo(x, y);
 	}
 	else {
 		Grasshopper::doSomething();

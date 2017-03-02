@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.idb
+*.log
+Debug/Actor.obj
+*.tlog
+Debug/StudentWorld.obj
